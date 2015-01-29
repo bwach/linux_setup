@@ -3,7 +3,7 @@ usermod bwach -aG netdev
 
 AWESOME_INSTALLED=$(dpkg-query -W --showformat='${Status}\n' awesome|grep "install ok installed")
 
-if [ "" == "$AWESOME_INSTALLEDK" ]; then
+if [ "" == "$AWESOME_INSTALLED" ]; then
 
 sudo add-apt-repository ppa:klaus-vormweg/awesome
 
